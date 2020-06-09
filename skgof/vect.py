@@ -55,6 +55,6 @@ def varange(starts, count):
                [3, 4, 5, 6, 7]])
     """
     try:
-        return stack(arange(s, s + count) for s in starts)
+        return stack([arange(s, s + count) for s in starts])
     except TypeError:
         return arange(starts, starts + count)
